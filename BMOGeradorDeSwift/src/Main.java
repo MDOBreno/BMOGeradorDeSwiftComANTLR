@@ -34,6 +34,10 @@ public class Main {
 		System.out.println("Swift Entity and Repository successfully generated!");
 	}
 	
+	
+	
+	
+	
 	private static Entity preprocessEntity(String entrada) {
 		//TODO: Implementar metodo
 		entrada = entrada.replace(" ", "");

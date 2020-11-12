@@ -13,18 +13,10 @@ protocol DocumentSerializable{
 }
 
 struct Entidade{
-    var nome:String
-    var data: String
-    var local: String
-    var descricao: String
-    var imagem: String
+varAtributosDaStruct
     var dictionary : [String: Any]{
         return [
-            "nome" : nome,
-            "data" : data,
-            "local" : local,
-            "descricao": descricao,
-            "imagem": imagem
+atributosDaStruct
         ]
     }
 }
@@ -35,6 +27,6 @@ extension Entidade : DocumentSerializable{
         let local = dictionary["local"] as? String,
         let imagem = dictionary["imagem"] as? String,
         let descricao = dictionary["descricao"] as? String else{return nil}
-        self.init(nome:nome, data:data, local:local, descricao:descricao, imagem:imagem)
+        self.init(contrutorNaExtension)
     }
 }
